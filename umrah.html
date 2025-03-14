@@ -4,231 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
-
-    <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    
-    <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/scss/styles.scss">
-
-    <title>Umrah & Hajj Packages - Pink Day Tour and Travels</title>
+    <title>Premium Hajj & Umrah Package - Sacred Journey</title>
 </head>
-<body  style="background-color: hsl(190, 64%, 22%);">
+<body class="dark-theme">
     <!--==================== HEADER ====================-->
-    <header class="header" id="header" >
-        <nav class="nav container"  >
-            <a href="index.html" class="nav__logo">PINKDAY</a>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">SACRED JOURNEYS</a>
 
-            <div class="nav__menu" id="nav-menu" >
-                <ul class="nav__list"   style="color: hsl(190, 64%, 22%);" >
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
                     <li class="nav__item">
                         <a href="index.html" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html#about" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="index.html#discover" class="nav__link">Discover</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="index.html#place" class="nav__link">Packages</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="index.html#why-choose-us" class="nav__link">Why Choose Us</a>
+                        <a href="hajj-package.html" class="nav__link active-link">Hajj & Umrah</a>
                     </li>
                 </ul>
-
-                <div class="nav__dark">
-                    <!-- Theme change button -->
-                    <span class="change-theme-name">Dark mode</span>
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-                </div>
-
                 <i class="ri-close-line nav__close" id="nav-close"></i>
             </div>
-
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-function-line"></i>
             </div>
         </nav>
     </header>
 
-    <!--==================== UMRAH & HAJJ PACKAGE ====================-->
-    <main class="main">
-        <section class="place section" id="umrah-hajj">
-            <h2 class="section__title" style="color: white;">Umrah & Hajj Packages</h2>
-
-            <div class="place__container container grid">
-                <!--==================== UMRAH PACKAGE CARD ====================-->
-                <div class="place__card">
-                    <img src="assets/img/umrah.jpg" alt="Umrah Package" class="place__img">
-                    
-                    <div class="place__content">
-                        <span class="place__rating">
-                            <i class="ri-star-line place__rating-icon"></i>
-                            <span class="place__rating-number">7 Days | 6 Nights</span>
-                        </span>
-
-                        <div class="place__data">
-                            <h3 class="place__title">Umrah Package</h3>
-                            <span class="place__subtitle">Makkah & Madinah</span>
-                            <span class="place__price">Contact Us</span>
-                        </div>
-
-                        <div class="place__amenities">
-                            <h4 class="place__amenities-title">Amenities:</h4>
-                            <ul class="place__amenities-list">
-                                <li><i class="ri-check-line"></i> 5-star hotel accommodation</li>
-                                <li><i class="ri-check-line"></i> Guided Ziyarat tours</li>
-                                <li><i class="ri-check-line"></i> Daily transportation</li>
-                                <li><i class="ri-check-line"></i> Complimentary meals</li>
-                                <li><i class="ri-check-line"></i> 24/7 support</li>
-                            </ul>
-                        </div>
+    <!--==================== HERO ====================-->
+    <section class="hero">
+        <div class="hero__carousel swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/img/hajj.jpg" alt="Kaaba" class="hero__img">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Blessed Hajj Experience</h1>
+                        <p class="hero__subtitle">14 Days of Spiritual Fulfillment</p>
+                        <a href="#offer" class="button button--gold button--flex">
+                            Start Your Journey <i class="ri-arrow-right-line"></i>
+                        </a>
                     </div>
-
-                    <button class="button button--flex place__button">
-                        <a href="contact.html"><i class="ri-arrow-right-line"></i></a>
-                    </button>
                 </div>
-
-                <!--==================== HAJJ PACKAGE CARD ====================-->
-                <div class="place__card">
-                    <img src="assets/img/umrah.jpg" alt="Hajj Package" class="place__img">
-                    
-                    <div class="place__content">
-                        <span class="place__rating">
-                            <i class="ri-star-line place__rating-icon"></i>
-                            <span class="place__rating-number">14 Days | 13 Nights</span>
-                        </span>
-
-                        <div class="place__data">
-                            <h3 class="place__title">Hajj Package</h3>
-                            <span class="place__subtitle">Makkah & Madinah</span>
-                            <span class="place__price">Contact Us</span>
-                        </div>
-
-                        <div class="place__amenities">
-                            <h4 class="place__amenities-title">Amenities:</h4>
-                            <ul class="place__amenities-list">
-                                <li><i class="ri-check-line"></i> 5-star hotel accommodation</li>
-                                <li><i class="ri-check-line"></i> Guided Hajj rituals</li>
-                                <li><i class="ri-check-line"></i> Daily transportation</li>
-                                <li><i class="ri-check-line"></i> Complimentary meals</li>
-                                <li><i class="ri-check-line"></i> 24/7 support</li>
-                                <li><i class="ri-check-line"></i> Medical assistance</li>
-                            </ul>
-                        </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/hajj.jpg" alt="Medina" class="hero__img">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Ziyarah in Medina</h1>
+                        <p class="hero__subtitle">Visit Holy Sites with Expert Guides</p>
                     </div>
-
-                    <button class="button button--flex place__button">
-                        <a href="contact.html"><i class="ri-arrow-right-line"></i></a>
-                    </button>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div class="footer__content grid">
-                <div class="footer__data">
-                    <h3 class="footer__title">Travel</h3>
-                    <p class="footer__description">Travel you choose the <br> destination, 
-                        we offer you the <br> experience.
-                    </p>
-                    <div>
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                            <i class="ri-facebook-box-fill"></i>
-                        </a>
-                        <a href="https://twitter.com/" target="_blank" class="footer__social">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
-                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
-                            <i class="ri-youtube-fill"></i>
-                        </a>
-                    </div>
+    <!--==================== PACKAGE HIGHLIGHTS ====================-->
+    <section class="highlights section" id="offer">
+        <div class="highlights__container container grid">
+            <div class="highlights__content">
+                <div class="highlight__card">
+                    <i class="ri-hotel-line highlight__icon"></i>
+                    <h3>5-Star Accommodation</h3>
+                    <p>Walking distance from Haram in Mecca & Medina</p>
                 </div>
+                <div class="highlight__card">
+                    <i class="ri-restaurant-line highlight__icon"></i>
+                    <h3>Halal Gourmet Meals</h3>
+                    <p>Buffet-style dining with international options</p>
+                </div>
+                <div class="highlight__card">
+                    <i class="ri-bus-line highlight__icon"></i>
+                    <h3>VIP Transportation</h3>
+                    <p>AC coaches with Haram shuttle service</p>
+                </div>
+            </div>
 
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">About</h3>
+            <!-- Limited Offer Box -->
+            <div class="offer__box">
+                <div class="offer__badge">
+                    <i class="ri-fire-fill"></i> Last 5 Seats!
+                </div>
+                <div class="offer__price">
+                    <p class="original-price"> For Price contact us</p>
+                    <p class="discounted-price"> </p>
+                </div>
+                <a href="contact.html" class="button button--gold button--flex">
+                    Book Now & Save 15% <i class="ri-arrow-right-line"></i>
+                </a>
+                <p class="offer__note">Includes all visa fees & insurance</p>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== ITINERARY ====================-->
+    <section class="itinerary section">
+        <h2 class="section__title">Spiritual Itinerary</h2>
+        <div class="itinerary__container container grid">
+            <!-- Day 1-3 -->
+            <div class="itinerary__day">
+                <div class="itinerary__content">
+                    <span class="itinerary__day-number">Days 1-3</span>
+                    <h3>Mecca Arrival & Umrah</h3>
                     <ul>
-                        <li class="footer__item">
-                            <a href="about.html" class="footer__link">About Us</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Features</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">New & Blog</a>
-                        </li>
+                        <li><i class="ri-checkbox-circle-line"></i> Arrival at Jeddah Airport - Transfer to Mecca</li>
+                        <li><i class="ri-checkbox-circle-line"></i> Perform Umrah Rituals with Guidance</li>
+                        <li><i class="ri-checkbox-circle-line"></i> Ziyarah to Jabal al-Nour & Hira Cave</li>
                     </ul>
                 </div>
-
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">Company</h3>
+            </div>
+            
+            <!-- Day 4-10 -->
+            <div class="itinerary__day">
+                <div class="itinerary__content">
+                    <span class="itinerary__day-number">Days 4-10</span>
+                    <h3>Hajj Rituals</h3>
                     <ul>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Team</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#place" class="footer__link">Plan & Pricing</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Become a member</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__data">
-                    <h3 class="footer__subtitle">Support</h3>
-                    <ul>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">FAQs</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="cancel.html" class="footer__link">Cancellation Policy</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="contact.html" class="footer__link">Contact Us</a>
-                        </li>
+                        <li><i class="ri-checkbox-circle-line"></i> Mina Stay - Day of Arafat</li>
+                        <li><i class="ri-checkbox-circle-line"></i> Muzdalifah Night - Rami al-Jamarat</li>
+                        <li><i class="ri-checkbox-circle-line"></i> Qurbani Arrangements - Halq/Taqsir</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="footer__rights">
-                <p class="footer__copy">&#169; 2025 Pink Day Tour and Travels, All rights reserved. Designed by Tabish Qadri</p>
-                <div class="footer__terms">
-                    <a href="terms.html" class="footer__terms-link">Terms & Agreements</a>
-                    <a href="terms.html" class="footer__terms-link">Privacy Policy</a>
+            <!-- Day 11-14 -->
+            <div class="itinerary__day">
+                <div class="itinerary__content">
+                    <span class="itinerary__day-number">Days 11-14</span>
+                    <h3>Medina Ziyarah</h3>
+                    <ul>
+                        <li><i class="ri-checkbox-circle-line"></i> Transfer to Medina - Visit Rawdah</li>
+                        <li><i class="ri-checkbox-circle-line"></i> Guided Tours of Historical Mosques</li>
+                        <li><i class="ri-checkbox-circle-line"></i> Final Departure Preparation</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line scrollup__icon"></i>
-    </a>
+    <!--==================== TESTIMONIALS ====================-->
+    <section class="testimonials section">
+        <div class="testimonials__container container swiper-container">
+            <div class="swiper-wrapper">
+                <div class="testimonial__card swiper-slide">
+                    <img src="assets/img/umrah.jpg" alt="Happy Pilgrim" class="testimonial__img">
+                    <blockquote>
+                        "A life-changing experience perfectly organized. Highly recommended!"
+                    </blockquote>
+                    <cite>- Aisha Khan, London</cite>
+                </div>
+                <div class="testimonial__card swiper-slide">
+                    <img src="assets/img/pilgrim2.jpg" alt="Happy Pilgrim" class="testimonial__img">
+                    <blockquote>
+                        "Flawless execution from start to finish. Truly blessed."
+                    </blockquote>
+                    <cite>- Omar Farooq, Dubai</cite>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    
-    <!--=============== SWIPER JS ===============-->
+    <!--==================== CTA SECTION ====================-->
+    <section class="cta section">
+        <div class="cta__container container">
+            <div class="cta__content">
+                <h2>Secure Your Spiritual Journey!</h2>
+                <p>Limited availability for next Hajj season</p>
+                <div class="countdown">
+                    <div class="countdown__item">
+                        <span id="days">87</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="countdown__item">
+                        <span id="hours">15</span>
+                        <p>Hours</p>
+                    </div>
+                </div>
+                <a href="contact.html" class="button button--gold button--flex button--large">
+                    Begin Your Application <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <!-- Same footer as previous pages -->
+
+    <!--=============== SCRIPTS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Initialize Swiper
+        const heroSwiper = new Swiper('.hero__carousel', {
+            loop: true,
+            effect: 'fade',
+            autoplay: { delay: 5000 },
+            pagination: { el: '.swiper-pagination', clickable: true }
+        });
+
+        // Urgency Timer (3 months countdown)
+        const countdownDate = new Date().setMonth(new Date().getMonth() + 3);
+        setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            
+            document.getElementById('days').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+            document.getElementById('hours').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        }, 1000);
+    </script>
 </body>
 </html>
