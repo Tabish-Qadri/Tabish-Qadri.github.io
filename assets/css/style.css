@@ -206,6 +206,7 @@ input {
 
 .nav__logo, .nav__toggle {
   color: var(--white-color);
+
 }
 
 .nav__logo {
@@ -1561,7 +1562,9 @@ input {
 }
 
 
-
+.nav{
+  height: 80px;
+}
 
 
 

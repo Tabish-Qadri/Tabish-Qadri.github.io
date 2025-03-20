@@ -1,1 +1,0 @@
-# Tabish-Qadri.github.io
